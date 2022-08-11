@@ -1,0 +1,319 @@
+body , html {
+    height: calc(100% - 2em);
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    Height: 100%;
+    background-color: rgb(39, 39, 97);
+    font-family: "Poppins";
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 20vw;
+    margin-inline: auto;
+    animation: bodyzoom 2s 1 2s linear;
+}
+
+@keyframes bodyzoom {
+    0% {
+        scale: 1;
+    }
+
+    10% {
+        scale: 1.3;
+    }
+
+    90% {
+        scale: 1.3;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+main {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, .5fr);
+    margin-left: -50vw;
+    margin-right: -35vw;
+}
+
+aside {
+}
+
+
+.tennisBall {
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    right: 50vw;
+    left: 57vw;
+    width: 1.46vw;
+    height: 1.46vw;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 2.5vw;
+    z-index: 999999999;
+    border: 0.0146vw solid rgba(52, 52, 54, 0.3);
+    animation: ball 1s infinite ease-out;
+}
+
+@keyframes ball {
+    0% {
+        transform: translateY(-7.3vw);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-7.3vw);
+    }
+}
+
+.ballShadow {
+    position: absolute;
+    right: 50vw;
+    left: 57vw;
+    width: 1.46vw;
+    height: 1.46vw;
+    background-color: rgba(52, 52, 54, 0.3);
+    border-radius: 50%;
+    margin-top: 3.7vw;
+    z-index: 99999999;
+    animation: ballShadow 1s infinite ease-out;
+}
+
+@keyframes ballShadow {
+    0% {
+        scale: 1;
+        transform: translateY(1.46vw);
+        width: 1.46vw;
+        height: 1.46vw;
+    }
+
+    50% {
+        scale: 1.5;
+        transform: translateY(0);
+        width: 1.68vw;
+        height: 1.24vw;
+    }
+
+    100% {
+        scale: 1;
+        transform: translateY(1.46vw);
+        width: 1.46vw;
+        height: 1.46vw;
+    }
+}
+
+.tennis {
+    position: relative;
+    z-index: 999999;
+    animation: tennis 1s infinite ease-out;
+}
+
+@keyframes tennis {
+    0% {
+        transform: skewY(20deg);
+    }
+
+    50% {
+        transform: skewY(0);
+    }
+
+    100% {
+        transform: skewY(20deg);
+    }
+}
+
+.head {
+    position: absolute;
+    right: 50vw;
+    left: 50vw;
+    width: 9.5vw;
+    height: 10.96vw;
+    background-color: red;
+    border-radius: 50%;
+    margin: auto;
+    transform: skewY(-40deg);
+    rotate: 45deg;
+}
+
+.head3D {
+    position: absolute;
+    right: 50vw;
+    left: 47.4vw;
+    width: 15vw;
+    height: 4.4vw;
+    background-color: rgb(196, 162, 13);
+    margin: auto;
+    rotate: -17deg;
+    border-radius: 50%;
+    margin-top: 2.7vw;
+    padding-top: 2.4vw;
+    z-index: -99;
+}
+
+.hand {
+    position: absolute;
+    right: 50vw;
+    left: 41.7vw;
+    width: 7.3vw;
+    height: 1.46vw;
+    background-color: rgb(226, 201, 86);
+    rotate: -23deg;
+    margin-top: 8.4vw;
+    transform: skew(25deg);
+    z-index: 99;
+}
+
+.hand3D1 {
+    position: absolute;
+    right: 50vw;
+    left: 42.4vw;
+    width: 6.36vw;
+    height: 0.73vw;
+    background-color: rgb(196, 162, 13);
+    rotate: -23deg;
+    margin-top: 9.84vw;
+    transform: skew(-20deg);
+}
+
+.hand3D2 {
+    position: absolute;
+    right: 50vw;
+    left: 41.2vw;
+    width: 1.75vw;
+    height: 0.453vw;
+    background-color: rgb(196, 162, 13);
+    margin-top: 10.72vw;
+    rotate: 42deg;
+    transform: skew(41deg);
+}
+
+.headBlue {
+    background-color: rgb(52, 52, 129);
+    position: absolute;
+    right: 50vw;
+    left: 46.55vw;
+    width: 6.211vw;
+    height: 3.11vw;
+    border-bottom-left-radius: 3.11vw;
+    border-bottom-right-radius: 3.11vw;
+    margin-top: 6.15vw;
+    rotate: 42deg;
+    transform: skew(-21deg);
+    z-index: 98;
+}
+
+
+
+.tennisShadow {
+    position: relative;
+    animation: tennisShadow 1s infinite ease-out;
+    transform: skewY(20deg);
+}
+
+@keyframes tennisShadow {
+    0% {
+        transform: skewY(0);
+    }
+
+    50% {
+        transform: skewY(20deg);
+    }
+
+    100% {
+        transform: skewY(0);
+    }
+}
+
+.headShadow {
+    position: absolute;
+    right: 50vw;
+    left: 50vw;
+    width: 9.5vw;
+    height: 10.96vw;
+    background-color: #000;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 4.8vw;
+    transform: skewY(-40deg);
+    rotate: 45deg;
+}
+
+.head3DShadow {
+    position: absolute;
+    right: 50vw;
+    left: 47.4vw;
+    width: 15vw;
+    height: 4.38vw;
+    background-color: #000;
+    margin: auto;
+    rotate: -17deg;
+    border-radius: 50%;
+    margin-top: 7.8vw;
+    padding-top: 2.4vw;
+    z-index: -99;
+}
+
+.handShadow {
+    position: absolute;
+    right: 50vw;
+    left: 41.7vw;
+    width: 7.3vw;
+    height: 1.46vw;
+    background-color: #000;
+    rotate: -23deg;
+    margin-top: 13.2vw;
+    transform: skew(25deg);
+    z-index: 99;
+}
+
+.hand3D1Shadow {
+    position: absolute;
+    right: 50vw;
+    left: 42.4vw;
+    width: 6.36vw;
+    height: 0.73vw;
+    background-color: #000;
+    rotate: -23deg;
+    margin-top: 12.2.4vw;
+    transform: skew(-20deg);
+}
+
+.hand3D2Shadow {
+    position: absolute;
+    right: 50vw;
+    left: 41.2vw;
+    width: 1.75vw;
+    height: 6.2px;
+    background-color: #000;
+    margin-top: 15.54vw;
+    rotate: 45deg;
+    transform: skew(51deg);
+}
+
+.headBlueShadow {
+    background-color: #000;
+    position: absolute;
+    right: 50vw;
+    left: 46.5vw;
+    width: 6.211vw;
+    height: 3.11vw;
+    border-bottom-left-radius: 3.11vw;
+    border-bottom-right-radius: 3.11vw;
+    margin-top: 10.98vw;
+    rotate: 44deg;
+    transform: skew(-21deg);
+    z-index: 98;
+}
